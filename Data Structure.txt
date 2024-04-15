@@ -1,0 +1,50 @@
+A Holistic Framework for Crime Prevention, Response, and Analysis with Emphasis on Women Safety using Technology and Societal Participation
+
+
+Smart cities, Geographic Information System (GIS), Crime analysis, Crime response,Women safety, Mobile application, Wearable device.
+
+
+IEEE Access,Volume:9,Issue Date:27.April.2021
+
+
+AHolistic_Framework
+
+aholistic_framework
+
+
+GIS Analysis Data
+------------------
+
+
+city_name
+names
+area_name
+mobile_name
+app_name
+wd_name
+Affected_person_name
+safe_status
+crime_desc
+crime_date
+action_taken
+crime_prevention
+No_Of_Case
+
+
+Types --- Sexual Harassment,Sexual Abused,Raped,Dowry demand
+
+
+
+
+GIS_DataSets_model,GIS_DataSets_Trained_model,ctype_ratio_model
+
+
+Sexual Abused
+
+Sexual Harassment
+
+Raped
+
+Dowry demand
+
+

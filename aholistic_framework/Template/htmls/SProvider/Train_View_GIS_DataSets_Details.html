@@ -1,0 +1,104 @@
+{% extends 'SProvider/design1.html' %}
+{% block researchblock %}
+
+
+<link rel="icon" href="images/icon.png" type="image/x-icon" />
+
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+
+
+
+		<style>
+			body {background-color:#000000;}
+			.container-fluid {padding:50px;}
+			.container{background-color:white;padding:50px;   }
+			#title{font-family: 'Fredoka One', cursive;
+}
+			.text-uppercase{
+			font-family: 'Righteous', cursive;
+
+			}
+			.tweettext{
+
+    border: 2px solid yellowgreen;
+    width: 1104px;
+    height: 442px;
+    overflow: scroll;
+    background-color:;
+}
+		.style1 {
+	color: #FF0000;
+	font-weight: bold;
+}
+        .style9 {color: #FFFF00}
+        .style10 {font-weight: bold; color: #FFFF00; }
+        </style>
+
+	<body>
+	<div class="container-fluid">
+		<div>
+
+			<div class="row">
+				<div class="col-md-5">
+ 					<form role="form" method="POST" >
+						{% csrf_token %}
+						<fieldset>
+							<p class="text-uppercase pull-center style1">View All Crime Type on Women Safety ON TRAINED DATA SET DETAILS  !!! </p>
+                            <hr>
+                            <div >
+                               <table border="5" bordercolor="#FF00FF">
+                     <tr><td bgcolor="#FF0000"><span class="style8">City Name</span></td>
+                    <td bgcolor="#FF0000"><span class="style8">Place Name</span></td>
+                    <td bgcolor="#FF0000"><span class="style8">Area Name</span></td>
+                    <td bgcolor="#FF0000"><span class="style8">Mobile Name</span></td>
+                    <td bgcolor="#FF0000"><span class="style8">Aapp Name</span></td>
+                    <td bgcolor="#FF0000"><span class="style8">Wearable Device Name</span></td>
+                    <td bgcolor="#FF0000"><span class="style8">Affected Person Name</span></td>
+                    <td bgcolor="#FF0000"><span class="style8">Safe Status</span></td>
+                    <td bgcolor="#FF0000"><span class="style8">Crime Desc</span></td>
+                    <td bgcolor="#FF0000"><span class="style8">Crime Date</span></td>
+                    <td bgcolor="#FF0000"><span class="style8">Action Taken</span></td>
+                    <td bgcolor="#FF0000"><span class="style8">Crime Prevention</span></td>
+                    <td bgcolor="#FF0000"><span class="style8">Number Of Case</span></td>
+                     <td bgcolor="#FF0000"><span class="style8">Crime Type</span></td>
+                      </tr>
+                            {% for object in list_objects %}
+                      <tr>
+                        <td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="center">{{object.city_name}}</div></td>
+                        <td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="center">{{object.names}}</div></td>
+                        <td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="center">{{object.area_name}}</div></td>
+                        <td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="center">{{object.mobile_name}}</div></td>
+                        <td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="center">{{object.app_name}}</div></td>
+                        <td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="center">{{object.wd_name}}</div></td>
+                        <td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="center">{{object.Affected_person_name}}</div></td>
+                        <td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="center">{{object.safe_status}}</div></td>
+                        <td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="center">{{object.crime_desc}}</div></td>
+                        <td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="center">{{object.crime_date}}</div></td>
+                        <td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="center">{{object.action_taken}}</div></td>
+                        <td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="center">{{object.crime_prevention}}</div></td>
+                        <td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="center">{{object.No_Of_Case}}</div></td>
+                        <td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="center">{{object.ctype}}</div></td>
+                        </tr>
+
+                                        {% endfor %}
+                      </table>
+
+                            </div>
+
+
+
+
+						</fieldset>
+					</form>
+				</div>
+
+				<div class="col-md-2">
+					<!-------null------>
+				</div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+    <tr>
